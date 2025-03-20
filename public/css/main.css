@@ -1,45 +1,45 @@
 @font-face {
 font-family: 'Montserrat Black';
-src: url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Black.eot');
+src: url('/assets/fonts/Montserrat/Montserrat-Black.eot');
 src: local('Montserrat Black'), local('Montserrat-Black'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Black.eot#iefix') format('embedded-opentype'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Black.woff') format('woff'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+url('/assets/fonts/Montserrat/Montserrat-Black.eot#iefix') format('embedded-opentype'),
+url('/assets/fonts/Montserrat/Montserrat-Black.woff') format('woff'),
+url('/assets/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
 font-weight: 900;
 font-style: normal;
 }
 
 @font-face {
 font-family: 'Futura PT Demi';
-src: url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Futura/FuturaPT-Demi.eot');
+src: url('/assets/fonts/Futura/FuturaPT-Demi.eot');
 src: local('Futura PT Demi'), local('FuturaPT-Demi'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Futura/FuturaPT-Demi.eot#iefix') format('embedded-opentype'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Futura/FuturaPT-Demi.woff2') format('woff2'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/css/FuturaPT-Demi.woff') format('woff'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/css/FuturaPT-Demi.ttf') format('truetype');
+url('/assets/fonts/Futura/FuturaPT-Demi.eot#iefix') format('embedded-opentype'),
+url('/assets/fonts/Futura/FuturaPT-Demi.woff2') format('woff2'),
+url('/assets/css/FuturaPT-Demi.woff') format('woff'),
+url('/assets/css/FuturaPT-Demi.ttf') format('truetype');
 font-weight: 600;
 font-style: normal;
 }
 
 @font-face {
 font-family:'FontAwesome';
-src:url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/FontAwesome/fontawesome-webfont.eot?v=4.7.0');
-src:url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/FontAwesome/fontawesome-webfont.eot#ief&v=4.7.0') format('embedded-opentype'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/FontAwesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/FontAwesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/FontAwesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/FontAwesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+src:url('/assets/fonts/FontAwesome/fontawesome-webfont.eot?v=4.7.0');
+src:url('/assets/fonts/FontAwesome/fontawesome-webfont.eot#ief&v=4.7.0') format('embedded-opentype'),
+url('/assets/fonts/FontAwesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+url('/assets/fonts/FontAwesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+url('/assets/fonts/FontAwesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+url('/assets/fonts/FontAwesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 font-weight:normal;
 font-style:normal;
 }
 
 @font-face {
 font-family: 'Montserrat';
-src: url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Regular.eot');
+src: url('/assets/fonts/Montserrat/Montserrat-Regular.eot');
 src: local('Montserrat Regular'), local('Montserrat-Regular'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Regular.eot#iefix') format('embedded-opentype'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
-url('/web/20220618125442im_/https://pravosudie18.ru/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+url('/assets/fonts/Montserrat/Montserrat-Regular.eot#iefix') format('embedded-opentype'),
+url('/assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+url('/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 font-display: auto;
@@ -234,7 +234,7 @@ list-style-type: none;
 }
 
 .pillars {
-background-image: url(/web/20220618125442im_/https://pravosudie18.ru/assets/img/pillars.jpg);
+background-image: url(/assets/img/pillars.jpg);
 background-repeat: no-repeat;
 background-size: 100%;
 color: white;
@@ -268,7 +268,7 @@ margin: 1em 0;
 }
 
 #consulta {
-background: url(/web/20220618125442im_/https://pravosudie18.ru/assets/img/consulta.jpg);
+background: url(/assets/img/consulta.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 color: white;

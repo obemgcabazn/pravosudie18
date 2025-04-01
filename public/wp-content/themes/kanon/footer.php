@@ -8,10 +8,10 @@
     </div>
     <div class="contacts">
       <h3>Контакты</h3>
-      <i><span></span>8 (922) 500-5888</i>
+      <i><span></span><a href="tel:+79817780555">8 981-778-05-55</a></i>
       <i><span></span>г. Ижевск, пер. Северный, 54</i>
       <!-- <i><span></span>pravosudie18@bk.ru</i> -->
-      <i><span></span><a href="whatsapp://send/?phone=79225005888">WhatsApp</a></i>
+      <i><span></span><a href="whatsapp://send/?phone=79817780555">WhatsApp</a></i>
       <!-- <i><span></span><a href="https://www.instagram.com/buldakov_advokat/">Instagram</a></i> -->
     </div>
     <div class="feedback" style="display: none;">

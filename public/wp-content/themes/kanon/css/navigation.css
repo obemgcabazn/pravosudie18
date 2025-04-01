@@ -415,12 +415,6 @@ body {
     display: block;
 }
 
-
-#line {
-    right: 3em;
-}
-
-
 #line > li {
     display: inline-block;
 }
@@ -465,10 +459,11 @@ body {
 }
 
 .dropdown-menu-right {
-    box-shadow: 1px -1px 6px 0.25px rgba(4, 4, 4, 0.4);
+    box-shadow: 1px -1px 6px 1px rgba(4, 4, 4, 0.4);
     display: none;
     position: absolute;
     z-index: 1;
+    top: 50px;
 }
 
 .dropdown-right:hover .dropdown-menu-right {

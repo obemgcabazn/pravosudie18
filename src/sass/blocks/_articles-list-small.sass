@@ -1,0 +1,39 @@
+.articles-list__small
+  position: relative
+  display: grid
+  --minmax: 230px
+  --gap: 0
+  grid-template-columns: repeat(auto-fit, minmax(var(--minmax),1fr))
+  gap: var(--gap)
+  margin-left: -25px
+  margin-right: -25px
+
+  .item__link
+    text-decoration: none
+
+  .item
+    +flex-column-start
+    padding: 30px 25px
+    position: relative
+    border-radius: 5px
+    background-color: var(--white)
+    +transition( background .3s )
+
+    &:hover
+      background-color: $amber-50
+      +transition( background .3s )
+
+  .item__img
+    display: block
+    line-height: 0
+    margin-bottom: 20px
+    border-radius: 5px
+
+  .item__category
+    display: block
+    margin-bottom: 10px
+    +sm-text-medium
+    color: $slate-300
+
+  .item__title
+    +sm-text-normal

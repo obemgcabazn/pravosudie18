@@ -1,0 +1,52 @@
+// $black
+// $gray-200 - background
+// $gray-300 - divider
+
+.c-download__link
+  display: flex
+  align-items: center
+  color: $black
+  background: $gray-100
+  width: 283px
+  border-radius: 2px
+  text-decoration: none
+  border: 1px solid transparent
+  +transition(box-shadow .3s, border-color .3s)
+
+  &:hover
+    border: 1px solid $gray-200
+    text-decoration: none
+    +shadow
+    +transition(box-shadow .3s, border-color .3s)
+
+  &:first-child
+    margin-bottom: 30px
+    @media (min-width: $md)
+      margin-bottom: 0
+
+  &.white
+    background: white
+    border: none
+
+  .c-download__desc
+    flex-grow: 1
+    font-size: 14px
+    line-height: 130%
+    font-weight: 600
+    padding: 10px 15px 10px 20px
+    @media (min-width: $xl)
+      padding: 7px 15px 7px 20px
+
+  .c-download__divider
+    width: 1px
+    background: $gray-200
+    align-self: stretch
+
+  .c-download__icon
+    height: 100%
+    padding: 15px 24px
+    +flex-center
+
+    img
+      max-width: none
+      width: 24px

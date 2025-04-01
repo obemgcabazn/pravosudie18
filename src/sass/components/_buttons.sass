@@ -1,0 +1,45 @@
+%button
+  display: inline-block
+  text-align: center
+  vertical-align: middle
+  user-select: none
+  text-decoration: none
+  cursor: pointer
+  +md-text-medium
+
+  &:hover
+    text-decoration: none
+
+  &:focus
+    outline: none
+
+=bgAndShadow( $color )
+  background: $color
+  box-shadow: 0 1px 3px transparentize( lighten( $color, 10 ), 0.88 ), 0 1px 2px transparentize( lighten( $color, 10 ), 0.66 )
+
+=bgAndShadowHover( $color )
+  background: lighten( $color, 10 )
+  box-shadow: 0 3px 6px transparentize($color, 0.88 ), 0 3px 6px transparentize( $color, 0.66 )
+
+.btn
+  @extend %button
+  color: white
+  background-color: transparent
+  border: 4px solid transparent
+  padding: .375em .75em
+  border-radius: 4px
+  +transition(background-color .3s)
+  &:hover
+    +transition(background-color .3s)
+
+  &.btn-primary-inverse
+    background: var(--white)
+    border: 2px solid var(--blue-600)
+    color: var(--blue-600)
+    &:hover
+      background-color: var(--blue-600)
+      color: var(--white)
+
+.btn-blue-rounded
+  @extend %button
+

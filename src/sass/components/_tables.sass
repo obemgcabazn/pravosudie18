@@ -1,0 +1,89 @@
+table
+  width: 100%
+  margin-bottom: 1.5em
+  th, td
+    color: var(--black)
+    padding: .5em
+
+  th
+    +sm-text-bold
+  td
+    +sm-text-normal
+    text-align: right
+
+    a
+      color: var(--black)
+      +transition(color .3s)
+      &:hover
+        color: var(--accent)
+        text-decoration: none
+        +transition(color .3s)
+ 
+table
+  th, td
+    text-align: left
+
+table:not(.table-bordered, .table-horizontal-bordered)
+  border-spacing: 0 10px
+  border-collapse: separate
+
+  th
+    +sm-text-uppercase
+    vertical-align: bottom
+
+  th[scope="row"]
+    background: white
+    vertical-align: middle
+    padding-left: 20px
+
+  td
+    text-align: left
+    vertical-align: middle
+    background: white
+    padding: 12px 20px
+
+
+table.table-bordered > :not(caption)
+  & > *
+    border-width: 1px 0
+    border-color: var(--gray-400)
+    border-style: solid
+    & > *
+      border-width: 0 1px
+      border-color: var(--gray-400)
+      border-style: solid
+
+table.table-horizontal-bordered
+  tr
+    td, th
+      padding: .3em .5em
+  tr:not(:last-child)
+    td, th
+      border-bottom-width: 1px
+      border-color: var(--gray-400)
+      border-style: solid
+
+table.table-striped
+  tr:nth-child(odd)
+    td, th
+      background-color: var(--gray-100)
+
+table.table-horizontal-bordered
+  tr
+    td, th
+      padding: 12px 20px
+  tr
+    td, th
+      border-bottom-width: 1px
+      border-color: var(--gray-400)
+      border-style: solid
+
+  tbody tr:last-child
+    td, th
+      border-bottom: none
+
+table.table-striped
+  tbody
+    tr:nth-child(odd)
+      td, th
+        background-color: var(--gray-100)

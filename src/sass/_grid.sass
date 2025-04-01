@@ -1,0 +1,186 @@
+//@use "sass:math"
+// Подгружать переменные Брейкпоинтов из Variables
+
+html
+  box-sizing: border-box
+  -ms-overflow-style: scrollbar
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+// BREAKPOINTS
+// до $sm
+// padding: 10px
+// width: 100%
+
+// $sm: 576px
+// $sm диапазон: 576px - 767px
+// $sm-container: 552px = 528px - padding 12px * 2
+
+// $md: 768px
+// $md диапазон: 768px - 1023px
+// $md-container: 708px = 738px - padding 15px * 2
+
+// $lg: 1024px
+// $lg диапазон: 1024px - 1399px
+// $lg-container: 960px = 992px - padding 16px * 2
+
+// $xl: 1400px
+// $xl диапазон: 1400px - 1499px
+// $xl-container: 1332px = 1366px - padding 17px * 2
+
+// $xxl: 1500px
+// $xxl-container: 1428px = 1464px - padding 18px * 2
+
+$grid-gutters: ( "xs": 20px, "sm": 24px, "md": 30px, "lg": 32px, "xl": 34px, "xxl": 36px ) !default
+
+// CONTAINERS
+$container-xs: $xs - map-get($grid-gutters, xs)
+$container-sm: $sm - map-get($grid-gutters, sm)
+$container-md: $md - map-get($grid-gutters, md)
+$container-lg: $lg - map-get($grid-gutters, lg)
+$container-xl: $xl - map-get($grid-gutters, xl)
+$container-xxl: $xxl - map-get($grid-gutters, xxl)
+
+$grid-breakpoints: ( "xs": 0, "sm": $sm, "md": $md, "lg": $lg, "xl": $xl, "xxl": $xxl ) !default
+
+$container-max-widths: ( "sm": $container-sm, "md": $container-md, "lg": $container-lg, "xl": $container-xl, "xxl": $container-xxl ) !default
+
+.container
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+  @each $breakpoint, $width in $grid-breakpoints
+
+    @if $breakpoint != "xs"
+      @media ( min-width: #{$width} )
+        max-width: map-get($container-max-widths, #{$breakpoint})
+        padding-left: calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+        padding-right: calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+    @else
+      max-width: map-get($container-max-widths, #{$breakpoint})
+      padding-left: calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+      padding-right: calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+
+@each $breakpoint, $width in $grid-breakpoints
+  @if $breakpoint != "xs"
+    .container-#{$breakpoint}
+      width: 100%
+      margin-right: auto
+      margin-left: auto
+      @media ( min-width: #{$width} )
+        max-width: map-get($container-max-widths, #{$breakpoint})
+
+.row
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+
+  @each $breakpoint, $width in $grid-breakpoints
+    @if $breakpoint != "xs"
+      @media ( min-width: #{$width} )
+        margin-left: - calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+        margin-right: - calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+    @else
+      margin-left: - calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+      margin-right: - calc( map-get($grid-gutters, #{$breakpoint}) / 2 )
+
+// Колонки
+.col
+  flex: 1 0 0
+  @each $breakpoint, $width in $grid-breakpoints
+
+    @if $breakpoint != "xs"
+
+      @for $i from 1 through 12
+        &-#{$breakpoint}-#{$i}
+          @media (min-width: #{$width})
+            display: block
+            width: calc( $i * 100% / 12)
+
+    @else // для классов .col-*
+
+      @for $i from 1 through 12
+        &-#{$i}
+          width: calc( 100% * $i / 12 )
+
+[class^="col-"],
+[class*="col-"]
+  display: block
+  @each $breakpoint, $width in $grid-breakpoints
+    @media (min-width: #{$width})
+      padding-left: calc(map-get($grid-gutters, #{$breakpoint}) / 2)
+      padding-right: calc(map-get($grid-gutters, #{$breakpoint}) / 2)
+
+@each $breakpoint, $width in $grid-breakpoints
+  @if $breakpoint != "xs"
+
+    .g-#{$breakpoint}-0
+      @media (min-width: #{$width})
+        margin-right: 0
+        margin-left: 0
+
+      > .col,
+      > [class*="col-"]
+        @media (min-width: #{$width})
+          padding-right: 0
+          padding-left: 0
+
+    .g-#{$breakpoint}
+      @media (min-width: #{$width})
+        margin-right: - calc( map-get($grid-gutters, #{$breakpoint}) / 2)
+        margin-left: - calc( map-get($grid-gutters, #{$breakpoint}) / 2)
+
+      > .col,
+      > [class*="col-"]
+        @media (min-width: #{$width})
+          padding-right: calc( map-get($grid-gutters, #{$breakpoint}) / 2)
+          padding-left: calc( map-get($grid-gutters, #{$breakpoint}) / 2)
+
+  @else
+
+    .no-gutters, .g-0
+      margin-right: 0
+      margin-left: 0
+
+      > .col,
+      > [class*="col-"]
+        padding-right: 0
+        padding-left: 0
+
+// offsets - ОТСТУПЫ
+@each $breakpoint, $width in $grid-breakpoints
+  @if $breakpoint != "xs"
+
+    .offset-#{$breakpoint}-0
+      @media (min-width: #{$width})
+        margin-left: 0
+
+    @for $i from 1 through 11
+      .offset-#{$breakpoint}-#{$i}
+        @media (min-width: #{$width})
+          margin-left: calc( $i * 100% / 12)
+
+  @else
+
+    @for $i from 1 through 11
+      .offset-#{$i}
+        margin-left: calc( $i * 100% / 12)
+
+
+@each $breakpoint, $width in $grid-breakpoints
+  @if $breakpoint != "xs"
+
+    .col-#{$breakpoint}-five
+      @media (min-width: #{$width})
+        flex: 0 0 20%
+        max-width: 20%
+
+  @else
+    .col-five
+      flex: 0 0 20%
+      max-width: 20%
+

@@ -1,0 +1,31 @@
+// COLORS
+$white: white
+$black: #161D26
+$accent: #004C95
+
+// THEME FONTS
+$heading-font: 'PT Serif', serif
+$text-font: 'IBM Plex Sans', sans-serif
+
+// BREAKPOINTS
+$xs: 480px
+$sm: 576px
+$md: 768px
+$lg: 1024px
+$xl: 1400px
+$xxl: 1500px
+
+// ОТСТУПЫ
+$spacer: 1rem !default
+$spacers: () !default
+$spacers: map-merge( ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer *  1.5), 5: ($spacer * 3)  ), $spacers )
+
+// SHADOWS
+=shadow
+  box-shadow: 0 9px 40px 0 transparentize($black, .95)
+
+=shadowHover( $color )
+  box-shadow: 0 3px 6px transparentize($color, 0.88 ), 0 3px 6px transparentize( $color, 0.66 )
+
+// TRANSITIONS
+$transition: cubic-bezier(.35, 0, 0, 1.01)

@@ -1,0 +1,33 @@
+{
+  "name": "_blank-tmp.loc",
+  "version": "1.0.0",
+  "description": "Шрифты надо подключать в templates/meta-properties.php через link так как при сборке",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch --env mode"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "group-css-media-queries-loader": "^4.3.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^14.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "loader-utils": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obemgcabazn/pravosudie18.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/obemgcabazn/pravosudie18/issues"
+  },
+  "homepage": "https://github.com/obemgcabazn/pravosudie18#readme"
+}

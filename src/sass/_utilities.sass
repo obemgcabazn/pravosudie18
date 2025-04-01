@@ -1,0 +1,396 @@
+// Зависит от variables и grid
+
+// 1. BG, BD, LISTS
+// 2. MARGIN & PADDING UTILITIES
+// 3. DISPLAY UTILITIES
+// 4. VUE ANIMATION CLASSES
+// 5. FLEXBOX ORDER CLASSES
+// 6. POSITION
+
+.white-bg-wrapper
+  background: var(--white)
+  padding: 40px 60px
+
+.bg-black
+  background-color: var(--black)
+  color: var(--white)
+
+.bg-white
+  background-color: var(--white)
+
+.bg-accent
+  background-color: var(--accent)
+
+.border-top
+  border-top: 1px solid $gray-500
+
+ul.list-inline
+  li
+    display: inline-block
+
+// MARGIN & PADDING UTILITIES
+// Перебор всех Брейкоинтов
+@each $breakpoint, $width in $grid-breakpoints
+
+  // для каждого создаем margin и padding
+  @each $prop, $abbrev in (margin: m, padding: p)
+
+    // для каждого берем размеры из массива в variables.sass
+    @each $size, $length in $spacers
+
+      @if $breakpoint != "xs"
+        @media ( min-width: #{$width} )
+          .#{$abbrev}-#{$breakpoint}-#{$size}
+            #{$prop}: $length !important
+
+          .#{$abbrev}t-#{$breakpoint}-#{$size},
+          .#{$abbrev}y-#{$breakpoint}-#{$size}
+            #{$prop}-top: $length !important
+
+          .#{$abbrev}b-#{$breakpoint}-#{$size},
+          .#{$abbrev}y-#{$breakpoint}-#{$size}
+            #{$prop}-bottom: $length !important
+
+          .#{$abbrev}r-#{$breakpoint}-#{$size},
+          .#{$abbrev}x-#{$breakpoint}-#{$size}
+            #{$prop}-right: $length !important
+
+          .#{$abbrev}l-#{$breakpoint}-#{$size},
+          .#{$abbrev}x-#{$breakpoint}-#{$size}
+            #{$prop}-left: $length !important
+
+      @else
+        .#{$abbrev}-#{$size}
+          #{$prop}: $length !important
+
+        .#{$abbrev}t-#{$size},
+        .#{$abbrev}y-#{$size}
+          #{$prop}-top: $length !important
+
+        .#{$abbrev}b-#{$size},
+        .#{$abbrev}y-#{$size}
+          #{$prop}-bottom: $length !important
+
+        .#{$abbrev}r-#{$size},
+        .#{$abbrev}x-#{$size}
+          #{$prop}-right: $length !important
+
+        .#{$abbrev}l-#{$size},
+        .#{$abbrev}x-#{$size}
+          #{$prop}-left: $length !important
+
+// Display utilities
+.hidden
+  visibility: hidden
+
+@each $breakpoint, $width in $grid-breakpoints
+
+  @if $breakpoint != "xs"
+    @media ( min-width: #{$width} )
+      .d-#{$breakpoint}-block
+        display: block !important
+
+      .d-#{$breakpoint}-inline-block
+        display: inline-block !important
+
+      .d-#{$breakpoint}-inline
+        display: inline !important
+
+      .d-#{$breakpoint}-flex
+        display: flex !important
+
+      .d-#{$breakpoint}-none
+        display: none !important
+
+  @else
+    .d-block
+      display: block !important
+
+    .d-inline-block
+      display: inline-block !important
+
+    .d-inline
+      display: inline !important
+
+    .d-flex
+      display: flex !important
+
+    .d-none
+      display: none !important
+
+=flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.flex-center
+  +flex-center
+
+=flex-row-aic
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.flex-row-aic
+  +flex-row-aic
+
+=flex-row-sb
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.flex-row-sb
+  +flex-row-sb
+
+=flex-row-sb-aic
+  +flex-row-sb
+  align-items: center
+
+.flex-row-sb-aic
+  +flex-row-sb-aic
+
+=flex-row-sa
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+
+.flex-row-sa
+  +flex-row-sa
+
+=flex-row-sa-aic
+  +flex-row-sa
+  align-items: center
+
+.flex-row-sa-aic
+  +flex-row-sa-aic
+
+=flex-row-start
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+
+.flex-row-start
+  +flex-row-start
+
+=flex-row-end
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+
+.flex-row-end
+  +flex-row-end
+
+=flex-column-aic
+  +flex-center
+  flex-direction: column
+
+.flex-column-aic
+  +flex-column-aic
+
+=flex-column-sb
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.flex-column-sb
+  +flex-column-sb
+
+=flex-column-start
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+
+.flex-column-start
+  +flex-column-start
+
+=flex-column-end
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  height: 100%
+
+.flex-column-end
+  +flex-column-end
+
+// Flex выравнивание
+.justify-content-start
+  -ms-flex-pack: start !important
+  justify-content: flex-start !important
+
+.justify-content-end
+  -ms-flex-pack: end !important
+  justify-content: flex-end !important
+
+.justify-content-center
+  -ms-flex-pack: center !important
+  justify-content: center !important
+
+.justify-content-between
+  -ms-flex-pack: justify !important
+  justify-content: space-between !important
+
+.justify-content-around
+  -ms-flex-pack: distribute !important
+  justify-content: space-around !important
+
+.align-items-start
+  -ms-flex-align: start !important
+  align-items: flex-start !important
+
+.align-items-end
+  -ms-flex-align: end !important
+  align-items: flex-end !important
+
+.align-items-center
+  -ms-flex-align: center !important
+  align-items: center !important
+
+.align-items-baseline
+  -ms-flex-align: baseline !important
+  align-items: baseline !important
+
+.align-items-stretch
+  -ms-flex-align: stretch !important
+  align-items: stretch !important
+
+.align-content-start
+  -ms-flex-line-pack: start !important
+  align-content: flex-start !important
+
+.align-content-end
+  -ms-flex-line-pack: end !important
+  align-content: flex-end !important
+
+.align-content-center
+  -ms-flex-line-pack: center !important
+  align-content: center !important
+
+.align-content-between
+  -ms-flex-line-pack: justify !important
+  align-content: space-between !important
+
+.align-content-around
+  -ms-flex-line-pack: distribute !important
+  align-content: space-around !important
+
+.align-content-stretch
+  -ms-flex-line-pack: stretch !important
+  align-content: stretch !important
+
+.align-self-auto
+  -ms-flex-item-align: auto !important
+  align-self: auto !important
+
+.align-self-start
+  -ms-flex-item-align: start !important
+  align-self: flex-start !important
+
+.align-self-end
+  -ms-flex-item-align: end !important
+  align-self: flex-end !important
+
+.align-self-center
+  -ms-flex-item-align: center !important
+  align-self: center !important
+
+.align-self-baseline
+  -ms-flex-item-align: baseline !important
+  align-self: baseline !important
+
+.align-self-stretch
+  -ms-flex-item-align: stretch !important
+  align-self: stretch !important
+
+// Выравнивание
+.align-baseline
+  vertical-align: baseline !important
+
+.align-top
+  vertical-align: top !important
+
+.align-middle
+  vertical-align: middle !important
+
+.align-bottom
+  vertical-align: bottom !important
+
+.align-text-bottom
+  vertical-align: text-bottom !important
+
+.align-text-top
+  vertical-align: text-top !important
+
+.rounded-2
+  border-radius: 4px
+  overflow: hidden
+
+// Классы анимаций для Vue JS
+.fade-enter-active,
+.fade-leave-active
+  transition: opacity .5s $transition
+
+.fade-enter,
+.fade-leave-to
+  opacity: 0
+
+// FLEXBOX ORDER CLASSES
+$orders: ("first": -1, "0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "last": 6)
+
+// ORDERS
+@each $breakpoint, $width in $grid-breakpoints
+  @if $breakpoint != "xs"
+    @each $order, $orderval in $orders
+      .order-#{$breakpoint}-#{$order}
+        @media (min-width: #{$width})
+          order: $orderval !important
+  @else
+    @each $order, $orderval in $orders
+      .order-#{$order}
+        order: $orderval !important
+
+.w-100
+  width: 100%
+
+.h-100
+  height: 100%
+
+.w-50__exclude-gutter
+  width: calc(50% - #{map-get($grid-gutters, xs)})
+  @media (min-width: $sm)
+    width: calc(50% - #{map-get($grid-gutters, sm)})
+  @media (min-width: $md)
+    width: calc(50% - #{map-get($grid-gutters, md)})
+  @media (min-width: $lg)
+    width: calc(50% - #{map-get($grid-gutters, lg)})
+  @media (min-width: $xl)
+    width: calc(50% - #{map-get($grid-gutters, xl)})
+  @media (min-width: $xxl)
+    width: calc(50% - #{map-get($grid-gutters, xxl)})
+
+.w-50__include-gutter
+  width: calc(50% + #{map-get($grid-gutters, xs)})
+  @media (min-width: $sm)
+    width: calc(50% + #{map-get($grid-gutters, sm)})
+  @media (min-width: $md)
+    width: calc(50% + #{map-get($grid-gutters, md)})
+  @media (min-width: $lg)
+    width: calc(50% + #{map-get($grid-gutters, lg)})
+  @media (min-width: $xl)
+    width: calc(50% + #{map-get($grid-gutters, xl)})
+  @media (min-width: $xxl)
+    width: calc(50% + #{map-get($grid-gutters, xxl)})
+
+.position-static
+  position: static
+
+.position-relative
+  position: relative
+
+.position-absolute
+  position: absolute
+
+.position-fixed
+  position: fixed
+
+.position-sticky
+  position: sticky

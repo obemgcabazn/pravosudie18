@@ -1,0 +1,338 @@
+// 1. HEADING FONT
+// 2. TYPO SIZE - lg, md, sm, xs / normal, medium, bold, uppercase
+// 3. TYPOGRAPHY UTILITIES
+
+\:root, html
+  font-size: 10px
+  @media(min-width: $xl)
+    font-size: 12px
+
+=ff-headings
+  font:
+    family: $heading-font
+    style: normal
+    weight: $medium-weight
+
+$light-weight: 200
+$normal-weight: 400
+$medium-weight: 500
+$bold-weight: 600
+
+// РАЗМЕРЫ ТЕКСТА
+// XS - EXTRA SMALL
+=xs-text-size
+  font-size: 1rem
+  @media (min-width: $xl)
+    font-size: 1rem
+
+=xs-text-light
+  +xs-text-size
+  font-weight: $light-weight
+  line-height: 170%
+
+.xs-text-light
+  +xs-text-light
+
+=xs-text-normal
+  +xs-text-size
+  font-weight: $normal-weight
+  line-height: 170%
+  @media (min-width: $xl)
+    line-height: 150%
+
+.xs-text-normal
+  +xs-text-normal
+
+=xs-text-medium
+  +xs-text-size
+  font-weight: $medium-weight
+  line-height: 170%
+  @media (min-width: $xl)
+    line-height: 150%
+
+.xs-text-medium
+  +xs-text-medium
+
+=xs-text-bold
+  +xs-text-size
+  font-weight: $bold-weight
+  line-height: 170%
+  @media (min-width: $xl)
+    line-height: 150%
+
+.xs-text-bold
+  +xs-text-bold
+
+=xs-text-uppercase
+  +xs-text-size
+  @extend .uppercase
+  line-height: 170%
+
+.xs-text-uppercase
+  +xs-text-uppercase
+
+// SM - SMALL
+=sm-text-size
+  font-size: 1.2rem
+  @media (min-width: $xl)
+    font-size: 1.4rem
+
+=sm-text-light
+  +sm-text-size
+  font-weight: $light-weight
+  line-height: 150%
+  @media (min-width: $xl)
+    line-height: 160%
+
+.sm-text-light
+  +sm-text-light
+
+=sm-text-normal
+  +sm-text-size
+  font-weight: $normal-weight
+  line-height: 150%
+  @media (min-width: $xl)
+    line-height: 160%
+
+.sm-text-normal
+  +sm-text-normal
+
+=sm-text-medium
+  +sm-text-size
+  font-weight: $medium-weight
+  line-height: 150%
+  @media (min-width: $xl)
+    line-height: 170%
+
+.sm-text-medium
+  +sm-text-medium
+
+=sm-text-bold
+  +sm-text-size
+  font-weight: $bold-weight
+  line-height: 150%
+  @media (min-width: $xl)
+    line-height: 170%
+
+.sm-text-bold
+  +sm-text-bold
+
+=sm-text-uppercase
+  +sm-text-size
+  @extend .uppercase
+  line-height: 170%
+
+.sm-text-uppercase
+  +sm-text-uppercase
+
+// MD - MIDDLE
+=md-text-size
+  font-size: 1.4rem
+  @media (min-width: $xl)
+    font-size: 1.6rem
+
+=md-text-light
+  +md-text-size
+  font-weight: $light-weight
+  line-height: 150%
+  @media (min-width: $xl)
+    line-height: 160%
+
+.md-text-light
+  +md-text-light
+
+=md-text-normal
+  +md-text-size
+  font-weight: $normal-weight
+  line-height: 150%
+
+.md-text-normal
+  +md-text-normal
+
+=md-text-medium
+  +md-text-size
+  font-weight: $medium-weight
+  line-height: 150%
+
+.md-text-medium
+  +md-text-medium
+
+=md-text-bold
+  +md-text-size
+  font-weight: $bold-weight
+  line-height: 150%
+
+.md-text-bold
+  +md-text-bold
+
+=md-text-uppercase
+  +md-text-size
+  @extend .uppercase
+  line-height: 170%
+
+.md-text-uppercase
+  +md-text-uppercase
+
+// LG - LARGE
+=lg-text-size
+  font-size: 1.5rem
+  @media (min-width: $md)
+    font-size: 1.6rem
+  @media (min-width: $xl)
+    font-size: 1.8rem
+
+=lg-text-light
+  +lg-text-size
+  font-weight: $light-weight
+  line-height: 170%
+  @media (min-width: $xl)
+    line-height: 160%
+
+.lg-text-light
+  +lg-text-light
+
+=lg-text-normal
+  +lg-text-size
+  font-weight: $normal-weight
+  line-height: 130%
+
+.lg-text-normal
+  +lg-text-normal
+
+=lg-text-medium
+  +lg-text-size
+  font-weight: $medium-weight
+  line-height: 130%
+
+.lg-text-medium
+  +lg-text-medium
+
+=lg-text-bold
+  +lg-text-size
+  font-weight: $bold-weight
+  line-height: 130%
+
+.lg-text-bold
+  +lg-text-bold
+
+=lg-text-uppercase
+  +lg-text-size
+  @extend .uppercase
+  line-height: 170%
+
+.lg-text-uppercase
+  +lg-text-uppercase
+
+// РАЗМЕРЫ ЗАГОЛОВКОВ
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  +ff-headings
+  letter-spacing: -.02em
+  line-height: 1.2
+  a
+    color: $accent
+    &:hover
+      text-decoration: none
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6
+  margin-top: 0
+  margin-bottom: .5em
+
+=h1
+  +ff-headings
+  font-size: calc(1.375rem + 1.5vw)
+  letter-spacing: -0.03em
+  margin-top: .5rem
+  margin-bottom: .75em
+  @media (min-width: $xl)
+    font-size: 4.5rem
+h1, .h1
+  +h1
+
+=h2
+  +ff-headings
+  font-size: calc(1.325rem + .9vw)
+  letter-spacing: 0.015em
+  @media (min-width: $xl)
+    font-size: 3.5rem
+    letter-spacing: -0.01em
+
+h2, .h2
+  +h2
+
+=h3
+  +ff-headings
+  font-size: calc(1.3rem + .6vw)
+  letter-spacing: 0.01em
+  @media (min-width: $xl)
+    font-size: 2.75rem
+    letter-spacing: -0.02em
+h3, .h3
+  +h3
+
+=h4
+  +ff-headings
+  font-size: calc(1.275rem + .3vw)
+  letter-spacing: 0.015em
+  @media (min-width: $xl)
+    font-size: 2.25rem
+    letter-spacing: -0.01em
+h4, .h4
+  +h4
+
+=h5
+  +ff-headings
+  font-size: 2rem
+  letter-spacing: 0.015em
+h5, .h5
+  +h5
+
+=h6
+  +ff-headings
+  font-size: 1.75rem
+  letter-spacing: 0.015em
+
+h6, .h6
+  +h6
+
+p
+  margin-bottom: 1.4em
+
+p, div
+  +md-text-normal
+
+// СПИСКИ
+ul, ol
+  margin-bottom: 1.5em
+
+ol
+  margin-left: 25px
+  li
+    margin-bottom: 1em
+    line-height: 140%
+    &::marker
+      color: $black
+
+ul:not([class])
+  padding-left: 20px
+  position: relative
+
+  & > li
+    +md-text-normal
+    margin-bottom: .5rem
+
+    &:before
+      content: ''
+      position: absolute
+      width: 6px
+      height: 6px
+      display: inline-block
+      left: 0
+      background: url("img/icons/dots.svg") no-repeat
+      margin-top: .6rem
+      @media(min-width: $sm)
+        margin-top: .75rem
+
+li > ol,
+li > ul
+  margin-top: .5em
+  margin-bottom: .5em

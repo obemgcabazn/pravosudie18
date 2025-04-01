@@ -1,0 +1,22 @@
+.badge
+  display: inline-block
+  padding: .35em .75em
+  color: white
+  font-weight: 600
+  line-height: 1
+  text-align: center
+  white-space: nowrap
+  vertical-align: baseline
+  border-radius: .375em
+
+  &:empty
+    display: none
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  .badge
+    font-size: .75em
+
+a.badge
+  text-decoration: none
+  &:hover
+    text-decoration: none

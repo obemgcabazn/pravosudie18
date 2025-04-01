@@ -1,0 +1,228 @@
+// Типографика
+.block-shift__title
+  font-size: 24px
+  @media (min-width: $md)
+    font-size: 40px
+  @media (min-width: $xl)
+    font-size: 60px
+
+.block-shift__desc
+  font-size: 15px
+  line-height: 160%
+  @media (min-width: $md)
+    font-size: 18px
+
+// ОБЩИЕ СТИЛИ
+.block-shift-img
+  margin-bottom: 35px
+  margin-top: 35px
+  @media (min-width: $md)
+    margin-bottom: 86px
+
+  .block-shift__grid
+    display: flex
+    flex-direction: column
+    @media (min-width: $lg)
+      display: grid
+
+  .block-shift__title
+    margin-bottom: 24px
+    @media (min-width: $lg)
+      margin-bottom: 0
+
+  .block-shift__desc
+    background: white
+    border-radius: 0 0 4px 4px
+    padding: 30px 15px 30px 30px
+    @media (min-width: $sm)
+      padding: 40px 15px 40px 30px
+    @media (min-width: $lg)
+      border-radius: 4px
+      padding: 60px 100px 80px 60px
+    @media (min-width: $xl)
+      padding-top: 60px
+
+    p
+      margin-bottom: 18px
+      @media (min-width: $lg)
+        margin-bottom: 24px
+      &:last-child
+        margin-bottom: 0
+
+  .block-shift__img
+    line-height: 0
+    border-radius: 4px 4px 0 0
+    overflow: hidden
+    z-index: 10
+    display: flex
+    align-items: center
+    height: 160px
+    @media (min-width: $sm)
+      height: 200px
+    @media (min-width: $md)
+      height: 260px
+    @media (min-width: $lg)
+      display: block
+      height: auto
+
+    img
+      +shadow
+      width: 100%
+      border-radius: 4px 4px 0 0
+      @media (min-width: $lg)
+        border-radius: 4px
+
+// Right & Left Image
+// Они отличаются только для XL и XXL экранов
+.block-shift-img__inner-title
+  .block-shift__title
+    margin-top: 0
+    margin-bottom: 1em
+
+  .block-shift__grid
+    @media (min-width: $lg)
+      grid-template: 356px 125px auto/100px auto 100px
+
+    .block-shift__img
+      @media (min-width: $lg) and (max-width: ($xl - 1))
+        grid-row-start: 1
+        grid-row-end: 3
+        grid-column-start: 2
+        grid-column-end: 3
+
+    .block-shift__desc
+      @media (min-width: $lg) and (max-width: ($xl - 1))
+        grid-row-start: 2
+        grid-row-end: 4
+        grid-column-start: 1
+        grid-column-end: 4
+        padding: 175px 100px 60px
+
+  &.block-right-img-shift
+    .block-shift__grid
+      @media (min-width: $xl)
+        grid-template: 50px auto 50px/678px 80px auto
+      @media (min-width: $xxl)
+        grid-template: 50px auto 50px/678px 50px auto
+  &.block-left-img-shift
+    .block-shift__grid
+      @media (min-width: $xl)
+        grid-template: 50px auto 50px/auto 80px 678px
+      @media (min-width: $xxl)
+        grid-template: 50px auto 50px/auto 50px 678px
+
+
+.block-right-img-shift
+  .block-shift__desc
+    order: 2
+    @media (min-width: $xl)
+      grid-row-start: 2
+      grid-row-end: 4
+      grid-column-start: 1
+      grid-column-end: 3
+      padding-left: 60px
+
+  .block-shift__img
+    order: 1
+    @media (min-width: $xl)
+      margin-bottom: 0
+      grid-row-start: 1
+      grid-row-end: 3
+      grid-column-start: 2
+      grid-column-end: 4
+
+.block-left-img-shift
+  .block-shift__desc
+    order: 2
+    @media (min-width: $xl)
+      grid-row-start: 2
+      grid-row-end: 4
+      grid-column-start: 2
+      grid-column-end: 4
+      padding: 60px 40px 60px 120px
+
+  .block-shift__img
+    order: 1
+    @media (min-width: $xl)
+      margin-bottom: 0
+      grid-row-start: 1
+      grid-row-end: 3
+      grid-column-start: 1
+      grid-column-end: 3
+
+// Позиционирование ЗАГОЛОВКА
+// Заголовок снаружи
+.block-shift-img__outer-title
+  .block-shift__grid
+    @media (min-width: $lg)
+      grid-template: 75px 356px 125px auto/100px auto 100px
+
+  &.block-left-img-shift
+    .block-shift__grid
+      @media (min-width: $xl)
+        grid-template: 105px auto 75px/auto 50px 638px
+      @media (min-width: $xxl)
+        grid-template: 105px auto 75px/auto 50px 678px
+
+  &.block-right-img-shift
+    .block-shift__grid
+      @media (min-width: $xl)
+        grid-template: 105px auto 75px/638px 50px auto
+      @media (min-width: $xxl)
+        grid-template: 105px auto 75px/678px 50px auto
+
+
+  // Порядок для FLEXBOX
+  .block-shift__title
+    order: 1
+    @media (min-width: $lg)
+      grid-row-start: 1
+      grid-row-end: 2
+      grid-column-start: 2
+      grid-column-end: 3
+
+  .block-shift__img
+    // До LG display: flex
+    order: 2
+    // После LG display: grid
+    @media (min-width: $lg) and (max-width: ($xl - 1))
+      grid-row-start: 2
+      grid-row-end: 4
+      grid-column-start: 2
+      grid-column-end: 3
+
+  .block-shift__desc
+    // До LG display: flex
+    order: 3
+    // После LG display: grid
+    @media (min-width: $lg) and (max-width: ($xl - 1))
+      grid-row-start: 3
+      grid-row-end: 5
+      grid-column-start: 1
+      grid-column-end: 4
+      padding: 175px 100px 60px
+
+  // Картинка СПРАВА
+  &.block-right-img-shift
+    .block-shift__title
+      @media (min-width: $lg)
+        grid-row-start: 1
+        grid-row-end: 2
+        grid-column-start: 2
+        grid-column-end: 3
+      @media (min-width: $xl)
+        grid-row-start: 1
+        grid-row-end: 2
+        grid-column-start: 1
+        grid-column-end: 2
+        margin-left: 60px
+
+  // Картинка СЛЕВА
+  &.block-left-img-shift
+    .block-shift__title
+      @media (min-width: $xl)
+        grid-row-start: 1
+        grid-row-end: 2
+        grid-column-start: 3
+        grid-column-end: 4
+        margin-left: 60px

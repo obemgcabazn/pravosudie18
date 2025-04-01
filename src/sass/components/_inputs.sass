@@ -1,0 +1,68 @@
+// INPUT нужно оборачивать в label
+
+input
+  +sm-text-medium
+  padding: 14px 16px
+  width: 100%
+
+  @extend .border
+  +transition( border-color .3s )
+
+  &:focus, &:active
+    border-color: var(--gray-800)
+    +transition( border-color .3s )
+
+  &::placeholder
+    color: var(--gray-400)
+
+.component__input__add-bs-icon-to-label
+  position: relative
+  &:after
+    color: var(--gray-800)
+    display: inline-block
+    position: absolute
+    +bs-font
+  input
+    padding-left: 45px!important
+
+.component__label
+  &:after
+    color: var(--gray-800)
+
+// Темная тема
+.component__dark
+  .component__label
+    &:after
+      color: var(--gray-400)
+  .component__input
+    color: var(--gray-400)
+    border-color: var(--gray-800)
+    +transition( border-color .3s )
+
+    &:focus, &:active
+      border-color: var(--gray-800)
+      +transition( border-color .3s )
+
+    &::placeholder
+      color: var(--gray-800)
+
+.component__input__email__label
+  @extend .component__input__add-bs-icon-to-label
+  &:after
+    content: '\f32c'
+    top: 3px
+    left: 16px
+
+.component__input__name__label
+  @extend .component__input__add-bs-icon-to-label
+  &:after
+    content: '\f4e1'
+    top: 48px
+    left: 16px
+
+.component__input__phone__label
+  @extend .component__input__add-bs-icon-to-label
+  &:after
+    content: '\f5c1'
+    top: 3px
+    left: 16px

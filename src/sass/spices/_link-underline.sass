@@ -1,0 +1,28 @@
+// ССЫЛКИ
+=link-underline
+  position: relative
+  text-decoration: none
+  display: inline-block
+  margin-bottom: 5px
+
+  &::after
+    position: absolute
+    content: ''
+    display: block
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 1px
+    background: $gray-600
+    transition: .3s
+
+  &:hover:after
+    bottom: -3px
+
+.link-underline
+  +link-underline
+
+.link-white-underline
+  +link-underline
+  &:after
+    background: $white

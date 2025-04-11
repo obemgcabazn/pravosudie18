@@ -4,11 +4,4 @@ public/wp-config.php
 package-lock.json
 /node_modules
 
-/public/*
-/public/wp-content/*
-!/public/wp-content/
-/public/wp-content/themes/*
-!/public/wp-content/themes/
-/public/wp-content/themes/kanon/*
-!/public/wp-content/themes/kanon/
-!/public/wp-content/themes/kanon/*
+public/wp-config.php

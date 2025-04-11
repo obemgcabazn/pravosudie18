@@ -28,18 +28,26 @@ $tpl_dir = get_bloginfo( 'template_url' );
   <div id="pillow"></div>
   <div id="header-nav">
     <div id="hot-line">
-      <i></i>
-      <i><span></span><a href="tel:+79817780555">8-981-778-05-55</a></i>
-      <i><a href="mailto:pravosudie18@bk.ru">pravosudie18@bk.ru</a></i>
+      <a href="/" class="to-home"><span></span></a>
+      <i><span></span><a href="tel:+79817780555">8-981-77-80-555</a></i>
+      <i><a href="mailto:kanonspb@outlook.com">kanonspb@outlook.com</a></i>
     </div>
     <div id="nav-points" class="">
       <div class="brand" style="display: inline-flex;"><a data-event="toggle_menu" class="link-toggle lto"><b></b></a></div>
       <ul id="nav-ul" class="toggle-off">
-        <li id="pravo"><a href="/"><i><img src="/img/favicon450.png" alt="Правосудие18"></i><b>Правосудие 18</b></a></li>
+        <li id="pravo"><a href="/"><i><img src="/img/favicon450.png" alt="Правосудие18"></i><b>КАНОН</b></a></li>
+        <li class="dropdown"><a href="/urist">Юрист</a><span class="caret"></span>
+          <ul class="dropdown-menu" id="linesecond" name="ul">
+            <li><a href="/urist/arbitr_process">Арбитражные споры</a></li>
+            <li><a href="/urist/bankrotstvo">Банкротство</a></li>
+            <li><a href="/urist/business">Услуги для бизнеса</a></li>
+          </ul>
+        </li>
         <li class="dropdown"><a href="/advokat/">Адвокат</a><span class="caret"></span>
           <ul class="dropdown-menu" id="line" name="ul">
+            <li><a href="/advokat/">Уголовные дела</a></li>
             <li><a href="/advokat/problema228">Проблема 225</a></li>
-<!--            <li class="dropdown-right"><a href="/advokat/ugolovnoe_pravo">Уголовные дела</a><span class="caret-right"></span>-->
+            <li><a href="/advokat/grazhdanskoe_pravo">Гражданские дела</a></li>
 <!--              <ul class="dropdown-menu-right" name="ul">-->
 <!--                <li class="dropdown-right-next-next"><a href="/advokat/problema228">ст. 228</a></li>-->
 <!--                <li><a href="/advokat/ugolovnoe_pravo/dosuda">Досудебное производство</a></li>-->
@@ -82,17 +90,12 @@ $tpl_dir = get_bloginfo( 'template_url' );
             <!--              </ul>-->
             <!--            </li>-->
 <!--            <li><a href="/advokat/uslugi">Стоимость услуг</a></li>-->
-            <li><a href="/advokat/contacts">Контакты</a></li>
+
           </ul>
         </li>
 
-        <li class="dropdown"><a href="/urist">Юрист</a><span class="caret"></span>
-          <ul class="dropdown-menu" id="linesecond" name="ul">
-            <li><a href="/urist/arbitr_process">Арбитражное право</a></li>
-            <li><a href="/urist/bankrotstvo">Банкротство</a></li>
-            <li><a href="/urist/business">Сопровождение бизнеса</a></li>
-          </ul>
-        </li>
+
+        <li><a href="/advokat/contacts">Контакты</a></li>
       </ul>
     </div>
   </div>

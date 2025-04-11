@@ -282,6 +282,7 @@ body {
 
 .to-home > span {
     display: inline-block;
+    color: #2AC1A0;
 }
 
 .to-home:hover {
@@ -338,6 +339,7 @@ body {
     padding: 0.5em 0.75em;
     font-weight: normal;
     list-style: none;
+    right: 25%;
 }
 
 #nav-points li {

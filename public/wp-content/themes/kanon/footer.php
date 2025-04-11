@@ -8,10 +8,11 @@
     </div>
     <div class="contacts">
       <h3>Контакты</h3>
-      <i><span></span><a href="tel:+79817780555">8 981-778-05-55</a></i>
-      <i><span></span>г. Ижевск, пер. Северный, 54</i>
+      <i><span></span><a href="tel:+79817780555" rel="nofollow">8 981-77-80-555</a></i>
+      <i><span></span>г. Санкт-Петербург, ул. Восстания 13, офис 2</i>
       <!-- <i><span></span>pravosudie18@bk.ru</i> -->
-      <i><span></span><a href="whatsapp://send/?phone=79817780555">WhatsApp</a></i>
+      <i><span></span><a href="whatsapp://send/?phone=79817780555" rel="nofollow">WhatsApp</a></i>
+      <i><span class="fa-telegram"></span><a href="https://t.me/+79817780555" rel="nofollow">Telegram</a></i>
       <!-- <i><span></span><a href="https://www.instagram.com/buldakov_advokat/">Instagram</a></i> -->
     </div>
     <div class="feedback" style="display: none;">
@@ -23,59 +24,6 @@
         <button type="submit">Отправить</button>
       </form>
     </div>
-  </div>
-</div>
-<div id="myBtn" style="display: none;"><span title="Наверх" alt="Наверх"></span></div>
-<div id="r-panel" style="display: none;">
-
-  <div id="rp-phone" class="rp-name">
-    <span style="font-family: FontAwesome" title="Позвонить"></span>
-
-    <div id="phone-content" class="rpi-content">
-      <i></i>
-      <b>Мы готовы помочь</b>
-      <b style="color: #6194E5"><span style="font-weight: normal" class="rpics" title="Звонить по указанному номеру."> </span><a href="tel:+79225005888">+7 (922) 500 58 88</a></b>
-      <i><span> </span><a href="whatsapp://send/?phone=79225005888"> WhatsApp</a></i>
-      <i><span> </span><a href="https://www.instagram.com/buldakov_advokat/"> Instagram</a></i>
-
-      <ul>
-        <li><a href="/advokat/kontakty">Адвокат</a></li>
-        <b style="color: #6194E5"><span style="font-weight: normal" class="rpics" title="Адвокат"> </span><a href="tel:+79043108390">+7 (904) 310-8390</a></b>
-        <li><a href="/urist/contacts">Юрист</a></li>
-        <b style="color: #6194E5"><span style="font-weight: normal" class="rpics" title="Юрист"> </span><a href="tel:+79630268501">+7 (963) 026-8501</a></b>
-      </ul>
-    </div>
-  </div>
-
-  <div id="rp-message" class="rp-name">
-    <span style="font-family: FontAwesome" title="Отправить письмо"></span>
-
-    <div id="message-content" class="rpi-content">
-      <b></b>
-      <a href="javascript:send_question_on();">Задать вопрос</a>
-    </div>
-  </div>
-
-  <div id="rp-chat" class="rp-name">
-    <span style="font-family: FontAwesome" title="Whats App чат"></span>
-
-    <div id="сhat-content" class="rpi-content">
-      <b></b>
-      <a href="https://api.whatsapp.com/send?phone=79225005888" target="blank">Whats App - Чат</a>
-    </div>
-  </div>
-</div>
-<div id="myModal">
-  <div class="modal-content">
-    <div class="modalPanel"><span class="close">×</span></div>
-    <div class="modal-header"><div id="modalText"></div></div>
-    <div class="modal-body"></div>
-    <div class="modal-footer"></div>
-  </div>
-</div>
-<div id="iMapBox">
-  <div id="iMap">
-    <a href="/advokat/kontakty">Показать местоположение на карте</a>
   </div>
 </div>
 </div><!-- wrapper -->

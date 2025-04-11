@@ -138,17 +138,19 @@ span {
 
 .epigraph > p:nth-child(2) {
     text-align: right;
-
 }
 
 #form-messages {
     color: tomato;
 }
 
+.fa-telegram:before {
+    content: "\f2c6";
+}
+
 /*/////////////////////////////////////////////////////////////////////*/
 
 #kontakty {
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -369,33 +371,27 @@ h1 {
     background-image: repeating-linear-gradient(45deg, black, transparent 100px);
 }
 
-#lid > div {
+#lid .x {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-#lid > div > div {
+#lid .lid__item {
     max-width: 270px;
     padding: 1em 0;
-}
-
-#lid > div > div:hover {
-    /* background-color: rgb(255,255,255, 0.1); */
-}
-
-
-#lid > div > div > a > b {
-    display: block;
-    color: snow;
-    font-variant: small-caps;
-    text-shadow: 0 0 1em rgba(255, 250, 250, 0.05);
     text-align: center;
+}
+
+#lid .lid__item b {
+    text-transform: uppercase;
+    color: snow;
+    text-shadow: 0 0 1em rgba(255, 250, 250, 0.05);
     padding: 0.75em 0;
 }
 
-#lid > div > div > a > img {
-    margin: 0 86px;
+#lid .lid__item img {
+    margin: 20px 86px;
     display: block;
     border: 2px solid white;
     border-radius: 50%;
@@ -403,10 +399,6 @@ h1 {
     -webkit-box-shadow: 0 0 1em rgba(255, 250, 250, 0.25);
     -moz-box-shadow: 0 0 1em rgba(255, 250, 250, 0.25);
     transition: 0.17s;
-}
-
-#lid > div > div > a:hover b {
-
 }
 
 #lid > div > div > a:hover img {
@@ -530,8 +522,6 @@ h1 {
     background-color: #1E3649;
     border-top: 1px solid snow;
     color: white;
-    height: 120vh;
-    min-height: 498px;
     padding: 5em 0;
 }
 

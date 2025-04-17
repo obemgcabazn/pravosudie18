@@ -30,7 +30,7 @@ $tpl_dir = get_bloginfo( 'template_url' );
     <div id="hot-line">
       <a href="/" class="to-home"><span></span></a>
       <i><span></span><a href="tel:+79817780555">8-981-77-80-555</a></i>
-      <i><a href="mailto:kanonspb@outlook.com">kanonspb@outlook.com</a></i>
+      <i><span class="sendQuestion"></span><a href="mailto:kanonspb@outlook.com">kanonspb@outlook.com</a></i>
     </div>
     <div id="nav-points" class="">
       <div class="brand" style="display: inline-flex;"><a data-event="toggle_menu" class="link-toggle lto"><b></b></a></div>

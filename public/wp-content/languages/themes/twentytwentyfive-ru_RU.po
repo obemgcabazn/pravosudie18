@@ -31,9 +31,118 @@ msgid "This exquisite compilation showcases a diverse array of photographs that 
 msgstr "В этой изысканной подборке представлены разнообразные фотографии, передающие суть разных эпох и культур, отражающие уникальные стили и взгляды каждого художника."
 
 #: theme.json
-msgctxt "Custom template name"
-msgid "Page No Title"
-msgstr "Страница, без названия"
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Заголовок"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Подвал"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr "Контраст"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Средний"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Крупный"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "Очень крупный"
+
+#: functions.php:76
+msgid "Checkmark"
+msgstr "Галочка"
+
+#: patterns/contact-info-locations.php:33 patterns/footer-social.php:22
+#: patterns/media-instagram-grid.php:24 patterns/page-cv-bio.php:47
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php:36
+#: patterns/page-link-in-bio-with-tight-margins.php:48
+msgid "Instagram"
+msgstr "Instagram"
+
+#: patterns/contact-info-locations.php:34 patterns/footer-social.php:21
+msgid "Facebook"
+msgstr "Facebook"
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: patterns/comments.php
+msgctxt "Pattern title"
+msgid "Comments"
+msgstr "Комментарии"
+
+#: patterns/comments.php:18
+msgid "Comments"
+msgstr "Комментарии"
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr "Навигация по записям"
+
+#: patterns/hidden-search.php
+msgctxt "Pattern title"
+msgid "Search"
+msgstr "Поиск"
+
+#: patterns/hidden-sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr "Область виджетов"
+
+#: patterns/template-query-loop.php
+msgctxt "Pattern title"
+msgid "List of posts, 1 column"
+msgstr "Список записей, 1 столбец"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Маленький"
 
 #: theme.json
 msgctxt "Template part name"
@@ -41,39 +150,29 @@ msgid "Sidebar"
 msgstr "Область виджетов"
 
 #: theme.json
+msgctxt "Custom template name"
+msgid "Page No Title"
+msgstr "Страница, без названия"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Base"
+msgstr "Базовый"
+
+#: functions.php:106
+msgid "A collection of full page layouts."
+msgstr "Коллекция макетов полных страниц."
+
+#: theme.json
 msgctxt "Template part name"
 msgid "Footer Newsletter"
 msgstr "Подвал с новостной рассылкой"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Footer Columns"
-msgstr "Столбцы в подвале"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Footer"
-msgstr "Подвал"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Header with large title"
-msgstr "Заголовок с крупным заголовком"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Vertical Header"
-msgstr "Вертикальный заголовок"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Header"
-msgstr "Заголовок"
-
-#: styles/02-noon.json styles/typography/typography-preset-1.json
-msgctxt "Font family name"
-msgid "Beiruti"
-msgstr "Beiruti"
 
 #: styles/05-twilight.json styles/typography/typography-preset-4.json
 msgctxt "Font family name"
@@ -274,61 +373,6 @@ msgctxt "Style variation name"
 msgid "Dusk"
 msgstr "Закат"
 
-#: theme.json styles/02-noon.json styles/04-afternoon.json
-#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
-#: styles/typography/typography-preset-1.json
-#: styles/typography/typography-preset-3.json
-#: styles/typography/typography-preset-4.json
-#: styles/typography/typography-preset-5.json
-#: styles/typography/typography-preset-7.json
-msgctxt "Font size name"
-msgid "Extra Extra Large"
-msgstr "Очень очень крупный"
-
-#: theme.json styles/02-noon.json styles/04-afternoon.json
-#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
-#: styles/typography/typography-preset-1.json
-#: styles/typography/typography-preset-3.json
-#: styles/typography/typography-preset-4.json
-#: styles/typography/typography-preset-5.json
-#: styles/typography/typography-preset-7.json
-msgctxt "Font size name"
-msgid "Extra Large"
-msgstr "Очень крупный"
-
-#: theme.json styles/02-noon.json styles/04-afternoon.json
-#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
-#: styles/typography/typography-preset-1.json
-#: styles/typography/typography-preset-3.json
-#: styles/typography/typography-preset-4.json
-#: styles/typography/typography-preset-5.json
-#: styles/typography/typography-preset-7.json
-msgctxt "Font size name"
-msgid "Large"
-msgstr "Крупный"
-
-#: theme.json styles/02-noon.json styles/04-afternoon.json
-#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
-#: styles/typography/typography-preset-1.json
-#: styles/typography/typography-preset-3.json
-#: styles/typography/typography-preset-4.json
-#: styles/typography/typography-preset-5.json
-#: styles/typography/typography-preset-7.json
-msgctxt "Font size name"
-msgid "Medium"
-msgstr "Средний"
-
-#: theme.json styles/02-noon.json styles/04-afternoon.json
-#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
-#: styles/typography/typography-preset-1.json
-#: styles/typography/typography-preset-3.json
-#: styles/typography/typography-preset-4.json
-#: styles/typography/typography-preset-5.json
-#: styles/typography/typography-preset-7.json
-msgctxt "Font size name"
-msgid "Small"
-msgstr "Маленький"
-
 #: styles/02-noon.json styles/colors/02-noon.json
 msgctxt "Style variation name"
 msgid "Noon"
@@ -400,62 +444,15 @@ msgctxt "Color name"
 msgid "Accent 1"
 msgstr "Акцент 1"
 
-#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
-#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
-#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
-#: styles/colors/02-noon.json styles/colors/03-dusk.json
-#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
-#: styles/colors/06-morning.json styles/colors/07-sunrise.json
-#: styles/colors/08-midnight.json
-msgctxt "Color name"
-msgid "Contrast"
-msgstr "Контраст"
-
-#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
-#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
-#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
-#: styles/colors/02-noon.json styles/colors/03-dusk.json
-#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
-#: styles/colors/06-morning.json styles/colors/07-sunrise.json
-#: styles/colors/08-midnight.json
-msgctxt "Color name"
-msgid "Base"
-msgstr "Базовый"
-
 #: styles/01-evening.json styles/colors/01-evening.json
 msgctxt "Style variation name"
 msgid "Evening"
 msgstr "Вечер"
 
-#: patterns/vertical-header.php
-msgctxt "Pattern description"
-msgid "Vertical Header with site title and navigation"
-msgstr "Вертикальный заголовок с названием сайта и навигацией"
-
-#: patterns/vertical-header.php
-msgctxt "Pattern title"
-msgid "Vertical header"
-msgstr "Вертикальный заголовок"
-
 #: patterns/text-faqs.php:83
 msgctxt "Question in the FAQs pattern."
 msgid "Are signed copies available?"
 msgstr "Можно ли приобрести подписанные копии?"
-
-#: patterns/text-faqs.php:67
-msgctxt "Question in the FAQs pattern."
-msgid "When will The Stories Book be released?"
-msgstr "Когда выйдет Книга историй?"
-
-#: patterns/text-faqs.php:47
-msgctxt "Question in the FAQs pattern."
-msgid "How much does The Stories Book cost?"
-msgstr "Сколько стоит Книга историй?"
-
-#: patterns/text-faqs.php:31
-msgctxt "Question in the FAQs pattern."
-msgid "What is The Stories Book about?"
-msgstr "О чем Книга историй?"
 
 #: patterns/text-faqs.php:21
 msgctxt "Heading of the FAQs pattern."
@@ -548,11 +545,6 @@ msgctxt "Pattern title"
 msgid "Right-aligned single post"
 msgstr "Одиночная запись с выравниванием по правому краю"
 
-#: patterns/template-single-text-blog.php
-msgctxt "Pattern title"
-msgid "Text-only blog, single post"
-msgstr "Блог с текстом, одиночная запись"
-
 #: patterns/template-single-photo-blog.php:79
 msgid "Next Photo"
 msgstr "Следующее фото"
@@ -560,16 +552,6 @@ msgstr "Следующее фото"
 #: patterns/template-single-photo-blog.php:78
 msgid "Previous Photo"
 msgstr "Предыдущее фото"
-
-#: patterns/template-single-photo-blog.php:61
-msgctxt "Prefix before one or more tags. The tags are displayed in a separate block on the next line."
-msgid "Tagged:"
-msgstr "Метки:"
-
-#: patterns/template-single-photo-blog.php:53
-msgctxt "Prefix before one or more categories. The categories are displayed in a separate block on the next line."
-msgid "Categories:"
-msgstr "Рубрики:"
 
 #: patterns/template-single-photo-blog.php:42
 msgctxt "Prefix before the author name. The post author name is displayed in a separate block on the next line."
@@ -619,11 +601,6 @@ msgctxt "Pattern title"
 msgid "Right-aligned blog, search"
 msgstr "Блог с выравниванием по правому краю, поиск"
 
-#: patterns/template-search-text-blog.php
-msgctxt "Pattern title"
-msgid "Text-only blog, search"
-msgstr "Блог только с текстом, поиск"
-
 #: patterns/template-search-photo-blog.php
 msgctxt "Pattern title"
 msgid "Photo blog search results"
@@ -639,21 +616,6 @@ msgctxt "Pattern description"
 msgid "A list of posts, 1 column, with featured image and post date."
 msgstr "Список записей, 1 колонка, с основной картинкой и датой публикации."
 
-#: patterns/template-query-loop.php
-msgctxt "Pattern title"
-msgid "List of posts, 1 column"
-msgstr "Список записей, 1 столбец"
-
-#: patterns/template-query-loop-vertical-header-blog.php
-msgctxt "Pattern title"
-msgid "Right-aligned posts"
-msgstr "Записи с выравниванием по правому краю"
-
-#: patterns/template-query-loop-text-blog.php
-msgctxt "Pattern title"
-msgid "Text-only blog, posts"
-msgstr "Блог только с текстом, записи"
-
 #: patterns/template-query-loop-photo-blog.php
 msgctxt "Pattern description"
 msgid "A list of posts, 3 columns, with only featured images."
@@ -664,10 +626,6 @@ msgctxt "Pattern title"
 msgid "Photo blog posts"
 msgstr "Записи фотоблога"
 
-#: patterns/template-query-loop-news-blog.php:49
-msgid "Older Posts"
-msgstr "Предыдущие записи"
-
 #: patterns/template-query-loop-news-blog.php:45
 msgid "Newer Posts"
 msgstr "Более новые записи"
@@ -676,16 +634,6 @@ msgstr "Более новые записи"
 msgctxt "Prefix before the author name. The post author name is displayed in a separate block."
 msgid "Written by"
 msgstr "Автор"
-
-#: patterns/template-query-loop-news-blog.php
-msgctxt "Pattern title"
-msgid "News blog query loop"
-msgstr "Цикл записей новостного блога"
-
-#: patterns/template-page-vertical-header-blog.php
-msgctxt "Pattern title"
-msgid "Page template for the right-aligned blog"
-msgstr "Шаблон страницы для блога с выравниванием по правому краю"
 
 #: patterns/template-page-photo-blog.php
 msgctxt "Pattern title"
@@ -700,16 +648,6 @@ msgstr "Последние"
 msgctxt "Pattern title"
 msgid "News blog with sidebar"
 msgstr "Новостной блог с боковой панелью"
-
-#: patterns/template-home-vertical-header-blog.php
-msgctxt "Pattern title"
-msgid "Homepage for right-aligned blog"
-msgstr "Главная страница блога с выравниванием по правому краю"
-
-#: patterns/template-home-text-blog.php
-msgctxt "Pattern title"
-msgid "Text-only blog, home"
-msgstr "Главная страница блога только с текстом"
 
 #: patterns/template-home-posts-grid-news-blog.php:114
 msgid "Architecture"
@@ -730,16 +668,6 @@ msgctxt "Pattern title"
 msgid "News blog home"
 msgstr "Главная страница новостного блога"
 
-#: patterns/template-archive-vertical-header-blog.php
-msgctxt "Pattern title"
-msgid "Archive for the right-aligned blog"
-msgstr "Архив блога с выравниванием по правому краю"
-
-#: patterns/template-archive-text-blog.php
-msgctxt "Pattern title"
-msgid "Text-only blog, archive"
-msgstr "Блог только с текстом, архив"
-
 #: patterns/template-archive-photo-blog.php
 msgctxt "Pattern title"
 msgid "Photo blog archive"
@@ -749,11 +677,6 @@ msgstr "Архив фотоблога"
 msgctxt "Pattern title"
 msgid "News blog archive"
 msgstr "Архив новостного блога"
-
-#: patterns/template-404-vertical-header-blog.php
-msgctxt "Pattern title"
-msgid "Right-aligned blog, 404"
-msgstr "Блог с выравниванием по правому краю, 404"
 
 #: patterns/services-team-photos.php:50
 msgid "Man in hat, standing in front of a building."
@@ -834,11 +757,6 @@ msgctxt "Pattern description"
 msgid "Three columns with images and text to showcase services."
 msgstr "Три колонки с изображениями и текстом для представления услуг."
 
-#: patterns/services-3-col.php
-msgctxt "Pattern title"
-msgid "Services, 3 columns"
-msgstr "Услуги, 3 столбца"
-
 #: patterns/pricing-3-col.php:125
 msgid "40€"
 msgstr "40€"
@@ -876,11 +794,6 @@ msgstr "Выберите членство"
 msgctxt "Pattern description"
 msgid "A three-column boxed pricing table designed to showcase services, descriptions, and pricing options."
 msgstr "Таблица с тремя колонками для отображения услуг, описаний и вариантов цен."
-
-#: patterns/pricing-3-col.php
-msgctxt "Pattern title"
-msgid "Pricing, 3 columns"
-msgstr "Цены, 3 столбца"
 
 #: patterns/pricing-2-col.php:82
 msgid "20€/month"
@@ -945,11 +858,6 @@ msgctxt "Pattern description"
 msgid "Pricing section with two columns, pricing plan, description, and call-to-action buttons."
 msgstr "Раздел цен с двумя колонками, планами подписки, описанием и кнопками действия."
 
-#: patterns/pricing-2-col.php
-msgctxt "Pattern title"
-msgid "Pricing, 2 columns"
-msgstr "Цены, 2 столбца"
-
 #: patterns/post-navigation.php:17 patterns/post-navigation.php:18
 #: patterns/template-single-left-aligned-content.php:78
 #: patterns/template-single-left-aligned-content.php:79
@@ -970,11 +878,6 @@ msgstr "Навигация по записям"
 msgctxt "Pattern description"
 msgid "Next and previous post links."
 msgstr "Ссылки на следующую и предыдущую записи."
-
-#: patterns/post-navigation.php
-msgctxt "Pattern title"
-msgid "Post navigation"
-msgstr "Навигация по записям"
 
 #: patterns/page-shop-home.php
 msgctxt "Pattern description"
@@ -1271,18 +1174,8 @@ msgstr "Добавьте текст или блоки, которые будут
 msgid "Other Posts"
 msgstr "Другие записи"
 
-#: patterns/hidden-sidebar.php
-msgctxt "Pattern title"
-msgid "Sidebar"
-msgstr "Область виджетов"
-
 #: patterns/cta-heading-search.php:21 patterns/hidden-search.php:14
 msgctxt "Button text. Verb."
-msgid "Search"
-msgstr "Поиск"
-
-#: patterns/hidden-search.php
-msgctxt "Pattern title"
 msgid "Search"
 msgstr "Поиск"
 
@@ -1310,11 +1203,6 @@ msgstr "Страница не найдена"
 msgctxt "image description"
 msgid "Small totara tree on ridge above Long Point"
 msgstr "Небольшое дерево тотара на гребне над Долгой точкой"
-
-#: patterns/hidden-404.php
-msgctxt "Pattern title"
-msgid "404"
-msgstr "404"
 
 #: patterns/hero-podcast.php:65
 msgctxt "Button text"
@@ -1382,11 +1270,6 @@ msgstr "Герой с перекрывающейся обложкой книги
 msgctxt "Pattern title"
 msgid "Hero, overlapped book cover with links"
 msgstr "Герой, перекрывающаяся обложка книги со ссылками"
-
-#: patterns/hero-full-width-image.php:33
-msgctxt "Sample hero button"
-msgid "Learn More"
-msgstr "Узнать больше"
 
 #: patterns/hero-full-width-image.php:27
 msgctxt "Sample hero paragraph"
@@ -1467,44 +1350,14 @@ msgid "Heading and paragraph with image on the right"
 msgstr "Заголовок и абзац с изображением справа"
 
 #: patterns/header.php
-msgctxt "Pattern description"
-msgid "Header with site title and navigation."
-msgstr "Заголовок с названием сайта и навигацией."
-
-#: patterns/header.php
 msgctxt "Pattern title"
 msgid "Header"
 msgstr "Заголовок"
 
 #: patterns/header-large-title.php
-msgctxt "Pattern description"
-msgid "Header with large site title and right-aligned navigation."
-msgstr "Заголовок с крупным названием сайта и навигацией, выровненной вправо."
-
-#: patterns/header-large-title.php
 msgctxt "Pattern title"
 msgid "Header with large title"
 msgstr "Заголовок с крупным заголовком"
-
-#: patterns/header-columns.php
-msgctxt "Pattern description"
-msgid "Header with site title and navigation in columns."
-msgstr "Заголовок с названием сайта и навигацией в колонках."
-
-#: patterns/header-columns.php
-msgctxt "Pattern title"
-msgid "Header with columns"
-msgstr "Заголовок со столбцами"
-
-#: patterns/header-centered.php
-msgctxt "Pattern description"
-msgid "Header with centered site title and navigation."
-msgstr "Заголовок с выровненным по центру названием сайта и навигацией."
-
-#: patterns/header-centered.php
-msgctxt "Pattern title"
-msgid "Centered header"
-msgstr "Центрированный заголовок"
 
 #: patterns/grid-with-categories.php:64
 msgid "Sunflowers"
@@ -1521,10 +1374,6 @@ msgstr "Антуриумы"
 #: patterns/grid-with-categories.php:29
 msgid "Close up of a red anthurium."
 msgstr "Крупный план красного антуриума."
-
-#: patterns/grid-with-categories.php:22
-msgid "Top Categories"
-msgstr "Лучшие рубрики"
 
 #: patterns/grid-with-categories.php
 msgctxt "Pattern description"
@@ -1628,10 +1477,6 @@ msgstr "Подвал с подпиской на новости"
 msgid "Themes"
 msgstr "Темы"
 
-#: patterns/footer-columns.php:51 patterns/footer.php:59
-msgid "Patterns"
-msgstr "Паттерны"
-
 #: patterns/footer-columns.php:50 patterns/footer.php:57
 msgid "Shop"
 msgstr "Магазин"
@@ -1643,10 +1488,6 @@ msgstr "Рекомендуемые"
 #: patterns/footer-columns.php:39 patterns/footer.php:51
 msgid "Authors"
 msgstr "Авторы"
-
-#: patterns/footer-columns.php:38 patterns/footer.php:49
-msgid "FAQs"
-msgstr "ЧаВо"
 
 #: patterns/footer-columns.php:37 patterns/footer.php:47
 msgid "About"
@@ -1737,11 +1578,6 @@ msgstr "Расписание мероприятий"
 #: patterns/event-rsvp.php:91
 msgid "Close up photo of white flowers on a grey background"
 msgstr "Крупный план белых цветов на сером фоне."
-
-#: patterns/event-rsvp.php:81
-msgctxt "Abbreviation for \"Please respond\"."
-msgid "RSVP"
-msgstr "Просим ответить"
 
 #: patterns/event-rsvp.php:73
 msgid "This immersive event celebrates the universal human experience through the lenses of history and ancestry, featuring a diverse array of photographers whose works capture the essence of different cultures and historical moments."
@@ -1938,7 +1774,8 @@ msgctxt "Pattern title"
 msgid "Events list"
 msgstr "Список мероприятий"
 
-#: patterns/cta-centered-heading.php:28
+#: patterns/banner-intro-image.php:42 patterns/cta-centered-heading.php:28
+#: patterns/hero-full-width-image.php:33
 msgid "Learn more"
 msgstr "Узнать больше"
 
@@ -1952,11 +1789,6 @@ msgstr "Как цветы, которые цветут в неожиданных
 #: patterns/template-home-photo-blog.php:27
 msgid "Tell your story"
 msgstr "Расскажите свою историю"
-
-#: patterns/cta-centered-heading.php
-msgctxt "Pattern description"
-msgid "A hero with a centered heading, paragraph and button."
-msgstr "Обложка с отцентрированным заголовком, абзацем и кнопкой."
 
 #: patterns/cta-centered-heading.php
 msgctxt "Pattern title"
@@ -2001,10 +1833,6 @@ msgstr "Книжный магазин"
 #: patterns/cta-book-locations.php:43
 msgid "Australia"
 msgstr "Австралия"
-
-#: patterns/cta-book-locations.php:27
-msgid "The Stories Book will be available from these international retailers."
-msgstr "Книга историй будет доступна у этих международных ритейлеров."
 
 #: patterns/cta-book-locations.php:23
 msgid "International editions"
@@ -2069,10 +1897,6 @@ msgstr "Audible"
 msgctxt "Example brand name."
 msgid "Amazon"
 msgstr "Amazon"
-
-#: patterns/cta-book-links.php:17
-msgid "Buy your copy of The Stories Book"
-msgstr "Купите свою копию Книга историй"
 
 #: patterns/cta-book-links.php
 msgctxt "Pattern description"
@@ -2143,17 +1967,6 @@ msgstr "Электронная почта"
 msgid "TikTok"
 msgstr "TikTok"
 
-#: patterns/contact-info-locations.php:34 patterns/footer-social.php:21
-msgid "Facebook"
-msgstr "Facebook"
-
-#: patterns/contact-info-locations.php:33 patterns/footer-social.php:22
-#: patterns/media-instagram-grid.php:24 patterns/page-cv-bio.php:47
-#: patterns/page-link-in-bio-heading-paragraph-links-image.php:36
-#: patterns/page-link-in-bio-with-tight-margins.php:48
-msgid "Instagram"
-msgstr "Instagram"
-
 #: patterns/contact-info-locations.php:32 patterns/footer-social.php:23
 #: patterns/page-link-in-bio-heading-paragraph-links-image.php:40
 #: patterns/page-link-in-bio-with-tight-margins.php:52
@@ -2195,29 +2008,15 @@ msgctxt "Pattern title"
 msgid "Centered link and social links"
 msgstr "Центрированная ссылка и ссылки на социальные сети"
 
-#: patterns/comments.php:18
-msgid "Comments"
-msgstr "Комментарии"
-
 #: patterns/comments.php
 msgctxt "Pattern description"
 msgid "Comments area with comments list, pagination, and comment form."
 msgstr "Область комментариев со списком комментариев, постраничной навигацией и формой комментариев."
 
-#: patterns/comments.php
-msgctxt "Pattern title"
-msgid "Comments"
-msgstr "Комментарии"
-
 #: patterns/binding-format.php
 msgctxt "Pattern description"
 msgid "Prints the name of the post format with the help of the Block Bindings API."
 msgstr "Выводит название формата поста с помощью API привязки блоков."
-
-#: patterns/binding-format.php
-msgctxt "Pattern title"
-msgid "Post format name"
-msgstr "Имя формата записи"
 
 #: patterns/banner-with-description-and-images-grid.php:48
 #: patterns/overlapped-images.php:26
@@ -2228,12 +2027,6 @@ msgstr "Черно-белая фотография крупным планом �
 #: patterns/overlapped-images.php:21
 msgid "Photography close up of a red flower."
 msgstr "Фотография крупным планом красного цветка."
-
-#. translators: %s is the brand name, e.g., 'Fleurs'.
-#: patterns/banner-with-description-and-images-grid.php:31
-#: patterns/overlapped-images.php:47
-msgid "%s is a flower delivery and subscription business. Based in the EU, our mission is not only to deliver stunning flower arrangements across but also foster knowledge and enthusiasm on the beautiful gift of nature: flowers."
-msgstr "%s — это бизнес по доставке цветов и подписке. Основанный в ЕС, наша миссия заключается не только в доставке великолепных цветочных композиций, но и в содействии знаниям и энтузиазму по поводу прекрасного подарка природы: цветов."
 
 #: patterns/banner-with-description-and-images-grid.php:23
 #: patterns/overlapped-images.php:37
@@ -2257,6 +2050,12 @@ msgstr "#истории"
 #: patterns/banner-poster.php:51
 msgid "Let’s hear them."
 msgstr "Давайте послушаем их."
+
+#. translators: %s is the brand name, e.g., 'Fleurs'.
+#: patterns/banner-with-description-and-images-grid.php:31
+#: patterns/overlapped-images.php:47
+msgid "%s is a flower delivery and subscription business. Based in the EU, our mission is not only to deliver stunning flower arrangements across but also foster knowledge and enthusiasm on the beautiful gift of nature: flowers."
+msgstr "%s — это бизнес по доставке цветов и подписке. Основанный в ЕС, наша миссия заключается не только в доставке великолепных цветочных композиций, но и в содействии знаниям и энтузиазму по поводу прекрасного подарка природы: цветов."
 
 #: patterns/banner-poster.php:39
 msgid "Fuego Bar, Mexico City"
@@ -2312,11 +2111,6 @@ msgctxt "Pattern title"
 msgid "Intro with left-aligned description"
 msgstr "Введение с выровненным по левому краю описанием"
 
-#: patterns/banner-intro-image.php:42
-msgctxt "Button text of intro section."
-msgid "Learn More"
-msgstr "Узнать больше"
-
 #: patterns/banner-intro-image.php:35
 msgctxt "Sample description for banner with flower."
 msgid "Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience, revealing hidden wonders."
@@ -2367,11 +2161,6 @@ msgstr "Обложка с большим заголовком"
 msgid "Image of a book"
 msgstr "Изображение книги"
 
-#: patterns/banner-about-book.php:26
-msgctxt "Pattern placeholder text."
-msgid "This exquisite compilation showcases a diverse array of photographs that capture the essence of different eras and cultures, reflecting the unique styles and perspectives of each artist. Fleckenstein’s evocative imagery, Strand’s groundbreaking modernist approach, and Kōno’s meticulous documentation of Japanese life come together in a harmonious blend that celebrates the art of photography. Each image in “The Stories Book” is accompanied by insightful commentary, providing historical context and revealing the stories behind the photographs. This collection is not only a visual feast but also a tribute to the power of photography to preserve and narrate the multifaceted experiences of humanity."
-msgstr "Эта изысканная компиляция демонстрирует разнообразие фотографий, которые захватывают суть разных эпох и культур, отражая уникальные стили и перспективы каждого художника. Эвокативные изображения Флеккенштейна, новаторский подход Странда в модернизме и тщательная документация японской жизни Коно объединяются в гармоничном сочетании, которое отмечает искусство фотографии. Каждое изображение в Книге историй сопровождается проницательными комментариями, предоставляющими исторический контекст и раскрывающими истории, стоящие за фотографиями. Эта коллекция не только визуальный праздник, но и дань уважения силе фотографии сохранять и повествовать о многогранных переживаниях человечества."
-
 #: patterns/banner-about-book.php:22
 msgid "About the book"
 msgstr "О книге"
@@ -2386,6 +2175,39 @@ msgctxt "Pattern title"
 msgid "Banner with book description"
 msgstr "Баннер с описанием книги"
 
+#: functions.php:105
+msgid "Pages"
+msgstr "Страницы"
+
+#: patterns/footer-columns.php:38 patterns/footer.php:49
+msgid "FAQs"
+msgstr "ЧаВо"
+
+#: patterns/event-rsvp.php:81
+msgctxt "Abbreviation for \"Please respond\"."
+msgid "RSVP"
+msgstr "Просим ответить"
+
+#: patterns/template-single-photo-blog.php:61
+msgctxt "Prefix before one or more tags. The tags are displayed in a separate block on the next line."
+msgid "Tagged:"
+msgstr "Метки:"
+
+#: patterns/template-single-photo-blog.php:53
+msgctxt "Prefix before one or more categories. The categories are displayed in a separate block on the next line."
+msgid "Categories:"
+msgstr "Рубрики:"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header with large title"
+msgstr "Заголовок с крупным заголовком"
+
+#: patterns/binding-format.php
+msgctxt "Pattern title"
+msgid "Post format name"
+msgstr "Имя формата записи"
+
 #: functions.php:134
 msgctxt "Label for the block binding placeholder in the editor"
 msgid "Post format name"
@@ -2395,17 +2217,102 @@ msgstr "Имя формата записи"
 msgid "A collection of post format patterns."
 msgstr "Коллекция паттернов форматов записей"
 
-#: functions.php:106
-msgid "A collection of full page layouts."
-msgstr "Коллекция макетов полных страниц."
+#: patterns/template-query-loop-news-blog.php:49
+msgid "Older Posts"
+msgstr "Предыдущие записи"
 
-#: functions.php:105
-msgid "Pages"
-msgstr "Страницы"
+#: patterns/services-3-col.php
+msgctxt "Pattern title"
+msgid "Services, 3 columns"
+msgstr "Услуги, 3 столбца"
 
-#: functions.php:76
-msgid "Checkmark"
-msgstr "Галочка"
+#: patterns/pricing-3-col.php
+msgctxt "Pattern title"
+msgid "Pricing, 3 columns"
+msgstr "Цены, 3 столбца"
+
+#: patterns/cta-centered-heading.php
+msgctxt "Pattern description"
+msgid "A hero with a centered heading, paragraph and button."
+msgstr "Обложка с отцентрированным заголовком, абзацем и кнопкой."
+
+#: patterns/pricing-2-col.php
+msgctxt "Pattern title"
+msgid "Pricing, 2 columns"
+msgstr "Цены, 2 столбца"
+
+#: patterns/header-columns.php
+msgctxt "Pattern title"
+msgid "Header with columns"
+msgstr "Заголовок со столбцами"
+
+#: patterns/footer-columns.php:51 patterns/footer.php:59
+msgid "Patterns"
+msgstr "Паттерны"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Columns"
+msgstr "Столбцы в подвале"
+
+#: styles/02-noon.json styles/typography/typography-preset-1.json
+msgctxt "Font family name"
+msgid "Beiruti"
+msgstr "Beiruti"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Extra Extra Large"
+msgstr "Очень очень крупный"
+
+#: patterns/text-faqs.php:67
+msgctxt "Question in the FAQs pattern."
+msgid "When will The Stories Book be released?"
+msgstr "Когда выйдет Книга историй?"
+
+#: patterns/text-faqs.php:47
+msgctxt "Question in the FAQs pattern."
+msgid "How much does The Stories Book cost?"
+msgstr "Сколько стоит Книга историй?"
+
+#: patterns/text-faqs.php:31
+msgctxt "Question in the FAQs pattern."
+msgid "What is The Stories Book about?"
+msgstr "О чем Книга историй?"
+
+#: patterns/cta-book-locations.php:27
+msgid "The Stories Book will be available from these international retailers."
+msgstr "Книга историй будет доступна у этих международных ритейлеров."
+
+#: patterns/cta-book-links.php:17
+msgid "Buy your copy of The Stories Book"
+msgstr "Купите свою копию Книга историй"
+
+#: patterns/banner-about-book.php:26
+msgctxt "Pattern placeholder text."
+msgid "This exquisite compilation showcases a diverse array of photographs that capture the essence of different eras and cultures, reflecting the unique styles and perspectives of each artist. Fleckenstein’s evocative imagery, Strand’s groundbreaking modernist approach, and Kōno’s meticulous documentation of Japanese life come together in a harmonious blend that celebrates the art of photography. Each image in “The Stories Book” is accompanied by insightful commentary, providing historical context and revealing the stories behind the photographs. This collection is not only a visual feast but also a tribute to the power of photography to preserve and narrate the multifaceted experiences of humanity."
+msgstr "Эта изысканная компиляция демонстрирует разнообразие фотографий, которые захватывают суть разных эпох и культур, отражая уникальные стили и перспективы каждого художника. Эвокативные изображения Флеккенштейна, новаторский подход Странда в модернизме и тщательная документация японской жизни Коно объединяются в гармоничном сочетании, которое отмечает искусство фотографии. Каждое изображение в Книге историй сопровождается проницательными комментариями, предоставляющими исторический контекст и раскрывающими истории, стоящие за фотографиями. Эта коллекция не только визуальный праздник, но и дань уважения силе фотографии сохранять и повествовать о многогранных переживаниях человечества."
+
+#: patterns/template-query-loop-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog query loop"
+msgstr "Цикл записей новостного блога"
+
+#: patterns/grid-with-categories.php:22
+msgid "Top Categories"
+msgstr "Лучшие рубрики"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "the WordPress team"
+msgstr "Команда WordPress"
 
 #. Author URI of the theme
 #: style.css patterns/footer-centered.php:34 patterns/footer-columns.php:74
@@ -2414,12 +2321,6 @@ msgstr "Галочка"
 #, gp-priority: low
 msgid "https://wordpress.org"
 msgstr "https://ru.wordpress.org"
-
-#. Author of the theme
-#: style.css
-#, gp-priority: low
-msgid "the WordPress team"
-msgstr "Команда WordPress"
 
 #. Theme URI of the theme
 #: style.css

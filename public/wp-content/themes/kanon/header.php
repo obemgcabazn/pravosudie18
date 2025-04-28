@@ -95,7 +95,7 @@ $tpl_dir = get_bloginfo( 'template_url' );
         </li>
 
 
-        <li><a href="/advokat/contacts">Контакты</a></li>
+        <li><a href="/contacts/">Контакты</a></li>
       </ul>
     </div>
   </div>

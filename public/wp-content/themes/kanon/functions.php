@@ -34,14 +34,14 @@ foreach ($includes as $file){
  */
 $args = array(
   'styles' => array(
-    array( 'handle' => 'banner', 'src' => 'css/banner.css?1', 'deps' => array() ),
-    array( 'handle' => 'banner-style', 'src' => 'css/banner-styles.css?1', 'deps' => array() ),
-    array( 'handle' => 'chevron', 'src' => 'css/chevron.css?1', 'deps' => array() ),
-    array( 'handle' => 'iconochive', 'src' => 'css/iconochive.css?1', 'deps' => array() ),
+    array( 'handle' => 'banner', 'src' => 'css/banner.css?2', 'deps' => array() ),
+    array( 'handle' => 'banner-style', 'src' => 'css/banner-styles.css?2', 'deps' => array() ),
+    array( 'handle' => 'chevron', 'src' => 'css/chevron.css?2', 'deps' => array() ),
+    array( 'handle' => 'iconochive', 'src' => 'css/iconochive.css?2', 'deps' => array() ),
     array( 'handle' => 'main', 'src' => 'css/main.css', 'deps' => array() ),
-    array( 'handle' => 'navigation', 'src' => 'css/navigation.css?1', 'deps' => array() ),
-    array( 'handle' => 'slider', 'src' => 'css/slider.css?1', 'deps' => array() ),
-    array( 'handle' => 'styles', 'src' => 'css/styles.css?1', 'deps' => array() ),
+    array( 'handle' => 'navigation', 'src' => 'css/navigation.css?2', 'deps' => array() ),
+    array( 'handle' => 'slider', 'src' => 'css/slider.css?2', 'deps' => array() ),
+    array( 'handle' => 'styles', 'src' => 'css/styles.css?2', 'deps' => array() ),
   ),
   'scripts' => array(
     array( 'handle' => 'jquery', 'src' => 'js/jquery.min.js', 'deps' => array( ) ),

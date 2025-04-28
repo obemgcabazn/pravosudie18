@@ -284,6 +284,7 @@ h1 {
     /*margin-top: 18px;
     margin-bottom: 18px;*/
     margin: 0;
+    position: relative;
 }
 
 .big_img > img {
@@ -292,7 +293,7 @@ h1 {
 }
 
 .tin > p {
-    text-indent: 0em !important;
+    text-indent: 0 !important;
 }
 
 .sm_boxes {
